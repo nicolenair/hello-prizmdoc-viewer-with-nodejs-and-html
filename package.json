@@ -9,7 +9,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "prestart": "node check-node-version.js && npm install && npm audit fix",
+    "prestart": "node check-node-version.js",
+    "postinstall": "node main.js"
     "start": "node main.js"
   },
   "repository": {
