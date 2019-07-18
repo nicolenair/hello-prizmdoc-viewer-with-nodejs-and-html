@@ -1,3 +1,3 @@
 // Procfile
 
-web: npm install
+web: npm install -p $PORT 8888
