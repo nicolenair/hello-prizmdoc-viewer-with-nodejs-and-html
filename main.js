@@ -8,7 +8,9 @@ process.on('unhandledRejection', (reason) => {
 async function main() {
   await validateConfig();
   const app = require('./app');
-  app.listen(port, () => console.log(`Application running at http://localhost:${port}`));
+  app.listen(process.env.PORT || 5000, () => console.log(`Application running at http://localhost:${port}`));
 }
 
 main();
+
+
