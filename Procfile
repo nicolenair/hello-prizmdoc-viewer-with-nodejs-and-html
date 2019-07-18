@@ -1,3 +1,3 @@
 // Procfile
 
-web: node server.js -p $PORT 8888
+web: npm install npm start -p $PORT 8888
